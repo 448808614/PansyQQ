@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PansyQQ</string>
+    <string name="dex_crc">3893208807</string>
+    <string-array name="server_list">
+        <item>sz.tencent.com</item>
+        <item>sz2.tencent.com</item>
+        <item>sz3.tencent.com</item>
+        <item>sz4.tencent.com</item>
+        <item>sz5.tencent.com</item>
+        <item>sz6.tencent.com</item>
+        <item>sz7.tencent.com</item>
+        <item>sz8.tencent.com</item>
+        <item>sz9.tencent.com</item>
+    </string-array>
+</resources>

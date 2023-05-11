@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="93dp"
+        android:background="@android:color/white"
+        >
+        <EditText
+            android:id="@+id/edt_verify"
+            android:layout_width="250dp"
+            android:layout_height="40dp" 
+            android:hint="请输入验证码"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:background="@drawable/verify_background"
+            android:singleLine="true"
+            />
+        <ImageView
+            android:id="@+id/img_verify"
+            android:layout_width="130dp"
+            android:layout_height="53dp"
+            android:layout_below="@id/edt_verify"
+            />
+        <Button
+            android:id="@+id/btn_verify"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/edt_verify"
+            android:layout_toRightOf="@id/img_verify"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="20dp"
+            android:text="确定"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:background="@drawable/btn_bg_blue"
+            />
+        
+    </RelativeLayout>
+
+</LinearLayout>

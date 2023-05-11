@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f0f2f8"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    >
+    <LinearLayout
+        android:id="@+id/linear_chat_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <com.pansy.robot.view.CircleImageView
+            android:id="@+id/iv_head_other"
+            android:layout_margin="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/default_head"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/message_normal_friend"
+            android:layout_marginRight="5dp"
+            >
+            <TextView
+                android:id="@+id/edt_chat_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:textSize="14sp"
+                android:textIsSelectable="true"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_chat_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/message_normal_me"
+            android:layout_marginLeft="5dp"
+            >
+            <TextView
+                android:id="@+id/edt_chat_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:background="@null"
+                android:textSize="14sp"
+                android:textIsSelectable="true"
+                />
+
+        </LinearLayout>
+        <com.pansy.robot.view.CircleImageView
+            android:id="@+id/iv_head_myself"
+            android:layout_margin="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:src="@drawable/default_head"
+            />
+    </LinearLayout>
+
+</LinearLayout>

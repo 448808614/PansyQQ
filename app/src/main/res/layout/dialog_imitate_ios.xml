@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dialog_imitate_ios_bg"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/tv_title"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="提示"
+            android:textColor="#181818"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textIsSelectable="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#323232"
+            android:text="内容"
+            android:lineSpacingExtra="5dp"
+            android:padding="5dp"
+            android:id="@+id/tv_content"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:paddingLeft="5dp"
+            android:visibility="gone"
+            android:background="@drawable/edit_background_ios"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_content"
+            android:id="@+id/edt"
+            android:layout_width="0dp"
+            android:gravity="center_vertical"
+            android:layout_height="35dp" />
+
+        <LinearLayout
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="15dp"
+            android:background="#dfdfdf"
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toBottomOf="@id/ll"
+            />
+        <TextView
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tv_confirm"
+            app:layout_constraintTop_toBottomOf="@id/v1"
+            app:layout_constraintHorizontal_weight="1"
+            android:gravity="center"
+            android:textColor="#4782ef"
+            android:textSize="16sp"
+            android:clickable="true"
+            android:background="@drawable/dialog_imitate_ios_tv_cancel_bg"
+            android:text="取消"
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/tv_cancel"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/v1"
+            app:layout_constraintHorizontal_weight="1"
+            android:gravity="center"
+            android:textColor="#4782ef"
+            android:textSize="16sp"
+            android:text="确定"
+            android:clickable="true"
+            android:id="@+id/tv_confirm"
+            android:background="@drawable/dialog_imitate_ios_tv_confirm_bg"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+        <View
+            android:id="@+id/v2"
+            app:layout_constraintTop_toTopOf="@id/tv_cancel"
+            app:layout_constraintBottom_toBottomOf="@id/tv_cancel"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="#dfdfdf"
+            />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
